@@ -38,4 +38,8 @@ export class DataBindingComponent {
     this.name = newName
   }
 
+  public onChangedValue(event: { newValue: number }) {
+    console.log(event.newValue)
+  }
+
 }

@@ -7,13 +7,15 @@ import { CoursesComponent } from './courses/courses.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     DataBindingComponent,
-    InputPropertyComponent
+    InputPropertyComponent,
+    OutputPropertyComponent
   ],
   imports: [
     BrowserModule,
