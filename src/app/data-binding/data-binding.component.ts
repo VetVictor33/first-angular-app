@@ -24,6 +24,8 @@ export class DataBindingComponent {
   public password: string = 'Digite sua senha'
   public passwordConfirmation: string = 'Confirme a senha'
 
+  public courseName: string = 'Java no Back, Angular no Front'
+
   public onKeyUp(event: KeyboardEvent) {
     this.inputValue = (<HTMLInputElement>event.target).value;
   }
