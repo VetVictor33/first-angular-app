@@ -10,7 +10,7 @@ export class CoursesComponent {
   companyName: string;
   courses: string[];
 
-  //injeção de dependência
+  //injeção de dependência no construtor
   constructor(private coursersService: CoursesService) {
     this.companyName = 'Loco Cursos';
     this.courses = this.coursersService.getCursos()

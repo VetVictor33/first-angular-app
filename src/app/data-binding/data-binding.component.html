@@ -1,0 +1,73 @@
+<h1>{{ mainTitle }}</h1>
+
+<section>
+  <article>
+    <h2>{{ propBingTitle }}</h2>
+    <img src="{{ imgUrl }}" alt="">
+    <img [src]="imgUrl" alt="">
+    <img bind-src="imgUrl" alt="">
+  </article>
+</section>
+  <hr>
+  <hr>
+<section>
+  <article>
+      <h2>{{ classBinding }}</h2>
+    <div>
+      <p>Selecione uma cor</p>
+      <select #colorChoice (change)="0">
+        <option value="red">Vermelho</option>
+        <option value="yellow">Amarelo</option>
+        <option value="black">Preto</option>
+      </select>
+      <h3 class="{{ colorChoice.value }}">Você escolheu {{ colorChoice.value }}</h3>
+    </div>
+  </article>
+</section>
+<hr>
+<hr>
+<section>
+  <article>
+    <h2>{{ eventBindingTitle }}</h2>
+
+    <div>
+      <h3>{{ inputValue }}</h3>
+      <hr>
+      <h3>{{ enderInputValue }}</h3>
+      <input
+       type="text"
+       #inputField
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="saveWithEnder(inputField.value)"
+        />
+    </div>
+  </article>
+</section>
+<hr>
+<hr>
+
+<section>
+  <article>
+    <h2>{{ twoWayDataBindingTitle }}</h2>
+
+    <p>{{ name }}</p>
+    <input type="text" [value]="name"
+      #nameInput
+      (keyup)="changeName(nameInput.value)">
+    
+    <p>{{ email }}</p>
+    <input type="text" [value]="email"
+      #emailInput
+      (input)="email = emailInput.value" >
+    
+    <p>{{ password }}</p>
+    <input type="text" [ngModel]="password"
+    (input)="password = passwordInput.value"
+     #passwordInput>
+
+    <!-- the real deal -->
+    <p>{{ passwordConfirmation }}</p>
+    <input type="text" [(ngModel)]="passwordConfirmation"/>
+  </article>
+</section>
+  
