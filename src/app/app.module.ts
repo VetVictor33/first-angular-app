@@ -19,7 +19,7 @@ import { HelpDomManipulationComponent } from './help-dom-manipulation/help-dom-m
     InputPropertyComponent,
     OutputPropertyComponent,
     LifecycleComponent,
-    HelpDomManipulationComponent
+    HelpDomManipulationComponent,
   ],
   imports: [
     BrowserModule,
