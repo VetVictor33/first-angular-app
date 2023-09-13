@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'counter',
@@ -8,11 +8,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class OutputPropertyComponent {
 
-  @Input() value: number = 0;
+  @Input()
+  public value: number = 0;
 
-  @Output() changedValue = new EventEmitter();
+  @Output()
+  public changedValue = new EventEmitter();
+
+  @ViewChild('inputValue')
+  inputValue!: ElementRef<HTMLInputElement>;
 
   public increment() {
+    const { value } = this.inputValue.nativeElement
+    console.log(value)
     this.value++
     this.changedValue.emit({ newValue: this.value })
   }
