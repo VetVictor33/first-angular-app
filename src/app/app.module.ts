@@ -8,6 +8,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { HelpDomManipulationComponent } from './help-dom-manipulation/help-dom-manipulation.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     CoursesComponent,
     DataBindingComponent,
     InputPropertyComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    LifecycleComponent,
+    HelpDomManipulationComponent
   ],
   imports: [
     BrowserModule,

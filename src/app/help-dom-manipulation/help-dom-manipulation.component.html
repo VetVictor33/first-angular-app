@@ -1,0 +1,7 @@
+<app-lifecycle [littleNumber]="iCommandLittleNumberToBe" *ngIf="doIPermitLittleNumberToBeAlive"/>
+<p *ngIf="(iCommandLittleNumberToBe > 10)">Little number aim't that little no more</p>
+<button (click)="lemmeChangeYouLittleNumber()">this is magic</button>
+<hr>
+<button (click)="changeMyWill()">
+  Little number, you shall {{ doIPermitLittleNumberToBeAlive? "leave": "return"}}
+</button>
