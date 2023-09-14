@@ -1,7 +1,7 @@
 import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'counter',
+  selector: 'app-counter',
   templateUrl: './output-property.component.html',
   styleUrls: ['./output-property.component.sass'],
   // outputs:[]
@@ -9,7 +9,7 @@ import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@
 export class OutputPropertyComponent {
 
   @Input()
-  public value: number = 0;
+  public value = 0;
 
   @Output()
   public changedValue = new EventEmitter();

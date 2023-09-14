@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HelpDomManipulationComponent {
 
-  public iCommandLittleNumberToBe: number = 1;
-  public doIPermitLittleNumberToBeAlive: boolean = true;
+  public iCommandLittleNumberToBe = 1;
+  public doIPermitLittleNumberToBeAlive = true;
 
   public lemmeChangeYouLittleNumber() {
     this.iCommandLittleNumberToBe++

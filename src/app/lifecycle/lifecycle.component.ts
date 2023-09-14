@@ -9,7 +9,7 @@ export class LifecycleComponent
   implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked,
   AfterViewInit, AfterViewChecked, OnDestroy {
 
-  @Input() public littleNumber: number = 0;
+  @Input() public littleNumber = 0;
 
 
   public littleNumberPlusPlus() {

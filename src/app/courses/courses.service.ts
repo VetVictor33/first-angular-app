@@ -5,8 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class CoursesService {
 
-  constructor() {
-  }
   getCursos(): string[] {
     return ['Java', 'JavaScript', 'TypeScript', 'Orientação a Objetos']
   }

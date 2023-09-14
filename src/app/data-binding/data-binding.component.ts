@@ -7,24 +7,24 @@ import { Component } from '@angular/core';
 })
 export class DataBindingComponent {
 
-  public mainTitle: string = 'Data Bing';
+  public mainTitle = 'Data Bing';
 
-  public propBingTitle: string = 'Property Binding';
-  public imgUrl: string = 'https://picsum.photos/200/300';
+  public propBingTitle = 'Property Binding';
+  public imgUrl = 'https://picsum.photos/200/300';
 
-  public classBinding: string = 'Property Binding (style)';
+  public classBinding = 'Property Binding (style)';
 
-  public eventBindingTitle: string = 'Event Binding'
-  public inputValue: string = 'Digite algo aí, meu rei'
-  public enderInputValue: string = 'Salve aqui após o enter'
+  public eventBindingTitle = 'Event Binding';
+  public inputValue = 'Digite algo aí, meu rei';
+  public enderInputValue = 'Salve aqui após o enter';
 
-  public twoWayDataBindingTitle: string = 'Two-way data binding'
-  public name: string = 'Digite seu nome';
-  public email: string = 'Digite seu email';
-  public password: string = 'Digite sua senha'
-  public passwordConfirmation: string = 'Confirme a senha'
+  public twoWayDataBindingTitle = 'Two-way data binding';
+  public name = 'Digite seu nome';
+  public email = 'Digite seu email';
+  public password = 'Digite sua senha';
+  public passwordConfirmation = 'Confirme a senha';
 
-  public courseName: string = 'Java no Back, Angular no Front'
+  public courseName = 'Java no Back, Angular no Front';
 
   public onKeyUp(event: KeyboardEvent) {
     this.inputValue = (<HTMLInputElement>event.target).value;
