@@ -1,7 +1,7 @@
 import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-counter',
+  selector: 'app-output-property',
   templateUrl: './output-property.component.html',
   styleUrls: ['./output-property.component.sass'],
   // outputs:[]
