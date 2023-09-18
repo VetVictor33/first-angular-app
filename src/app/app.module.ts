@@ -10,6 +10,8 @@ import { InputPropertyComponent } from './input-property/input-property.componen
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { HelpDomManipulationComponent } from './help-dom-manipulation/help-dom-manipulation.component';
+import { DiretivasComponent } from './diretivas/diretivas.component';
+import { ElvisOperatorComponent } from './elvis-operator/elvis-operator.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { HelpDomManipulationComponent } from './help-dom-manipulation/help-dom-m
     OutputPropertyComponent,
     LifecycleComponent,
     HelpDomManipulationComponent,
+    DiretivasComponent,
+    ElvisOperatorComponent,
   ],
   imports: [
     BrowserModule,

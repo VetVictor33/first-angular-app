@@ -1,0 +1,41 @@
+<div>
+  <h2>{{ title }}</h2>
+  <button (click)="onShowCourses()">
+    {{ showCourses ? 'Esconder' : 'Mostrar' }} cursos
+  </button>
+
+  <h3 *ngIf="!showCourses">Cursos escondidos</h3>
+  <div *ngIf="showCourses">
+    <h3>Lista de cursos</h3>
+    <ul>
+      <li *ngFor="let course of courses, let i = index"> {{ i+1 }}.{{ course }} </li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <h2>*ngSwitchCase</h2>
+  <nav>
+    <button (click)="selectedPage='home'">Home</button>
+    <button (click)="selectedPage='contact'">Contact</button>
+    <button (click)="selectedPage='about'">About</button>
+  </nav>
+
+  <div [ngSwitch]="selectedPage">
+    <p *ngSwitchDefault>Home é onde deitamos nossa cabeça para descansar</p>
+    <p *ngSwitchCase="'contact'">Os verdadeiros contatos são os amigos que fazemos pelo caminho</p>
+    <p *ngSwitchCase="'about'">É sobre</p>
+  </div>
+
+  <hr>
+
+  <h2>[ngClass]</h2>
+  <button [ngClass]="{
+    'red': changeColor,
+    'yellow': !changeColor,
+  }"
+    (click)="changeColor=!changeColor"
+  >Change my color, please</button>
+
+  <hr>
+</div>
